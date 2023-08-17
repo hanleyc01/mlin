@@ -1,0 +1,13 @@
+m:	module
+loop:	func	i64, i64:arg1
+	local	i64:count
+# 1 arg, 1 local
+	mov	count, 0
+	bge	L1, count, arg1
+L2:
+	add	count, count, arg1
+	blt	L2, count, arg1
+L1:
+	ret	count
+	endfunc
+	endmodule

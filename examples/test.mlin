@@ -1,0 +1,9 @@
+type Test[a] = mk_test[a]
+
+type Point = {
+    x: int,
+    y: int,
+}
+
+def main (args: List[string]): Result[unit, int] =
+  Result.ok ()
